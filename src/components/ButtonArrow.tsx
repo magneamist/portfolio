@@ -11,7 +11,7 @@ export default function ButtonArrow({ text }: { text: string }) {
           className="h-full text-sand max-sm:hidden"
           alt="Arrow"
         />
-        <p className="max-sm:text-xl border-2 border-pink sm:border-none sm:p-0 px-5 py-2 rounded-full">
+        <p className="max-sm:text-xl border-2 border-orange sm:border-none sm:p-0 px-5 py-2 rounded-full">
           {text}
         </p>
       </div>
