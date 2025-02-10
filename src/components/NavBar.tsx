@@ -3,7 +3,7 @@ import TransitionLink from "./TransitionLink";
 
 export default function NavBar() {
   return (
-    <nav className="flex space-x-4 bg-background/50 rounded-3xl backdrop-blur-sm fixed right-10 top-10 py-2.5 px-5 z-50">
+    <nav className="hidden sm:flex space-x-4 bg-background/50 rounded-3xl backdrop-blur-sm fixed right-10 top-10 py-2.5 px-5 z-50">
       <TransitionLink href="/" className="font-lora text-xl hover:underline">
         Home
       </TransitionLink>

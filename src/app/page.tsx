@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-14">
-        <div className="flex flex-col items-center gap-6 h-screen justify-end ">
-          <p className="text-3xl text-center">web designer & developer</p>
-          <h1 className="text-fluid text-center w-full whitespace-nowrap">
+        <div className="flex flex-col items-center gap-4 sm:gap-6 h-screen justify-end pb-4 sm:pb-0 ">
+          <p className="text-xl sm:text-3xl sm:text-center">
+            web designer & developer
+          </p>
+          <h1 className="sm:text-fluid text-center w-full text-5xl leading-[60px] sm:leading-normal sm:whitespace-nowrap">
             Magnea Mist Ólafsdóttir
           </h1>
-        </div>
-        <div className="grid grid-cols-8  h-[670px] gap-10">
-          <div className="bg-green rounded-t-[300px] rounded-b-3xl col-span-3 relative h-[550px] mx-10 flex justify-center hover:scale-105  duration-500 ease-in-out">
+          <div className="sm:hidden w-72 bg-green rounded-t-[200px] rounded-b-3xl relative h-[500px] flex justify-center">
             <Image
               src="/Profile.png"
               width={350}
@@ -25,9 +25,20 @@ export default function Home() {
               alt="Screenshots of the dashboard project showing desktop version"
             ></Image>
           </div>
-          <div className="col-span-5 col-start-4 w-full">
-            <div className="flex flex-col gap-10">
-              <p className="size-body">
+        </div>
+        <div className="sm:grid sm:grid-cols-8 h-[670px] gap-10">
+          <div className="hidden bg-green rounded-t-[300px] rounded-b-3xl col-span-3 relative h-[550px] mx-10 sm:flex justify-center hover:scale-105  duration-500 ease-in-out">
+            <Image
+              src="/Profile.png"
+              width={350}
+              height={500}
+              className="object-contain object-bottom absolute bottom-0"
+              alt="Screenshots of the dashboard project showing desktop version"
+            ></Image>
+          </div>
+          <div className="sm:col-span-5 sm:col-start-4 w-full">
+            <div className="flex flex-col gap-5 sm:gap-10 items-center sm:items-start">
+              <p className="leading-[40px] text-xl sm:text-2xl text-center sm:text-left sm:leading-relaxed">
                 Hi, I’m{" "}
                 <TransitionLink href="/moodboards">
                   <span className="font-alexandria hover:font-extrabold hover:text-pink duration-500">
@@ -52,7 +63,9 @@ export default function Home() {
         </div>
       </div>
       <div className="h-screen justify-center gap-10 flex flex-col">
-        <h2 className="text-center">Skills & services</h2>
+        <h2 className="text-center text-4xl sm:text-[64px]">
+          Skills & services
+        </h2>
         <Skills />
       </div>
       <ProjectSection />

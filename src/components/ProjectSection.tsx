@@ -48,8 +48,8 @@ export default function ProjectSection() {
   ];
 
   return (
-    <div className="grid grid-cols-8 gap-10 items-center h-screen">
-      <div className="col-span-5 relative h-full">
+    <div className="sm:grid sm:grid-cols-8 gap-10 items-center sm:h-screen">
+      <div className="sm:col-span-5 relative h-full  hidden sm:block ">
         {projects.map((project) => (
           <div
             key={project.name}
@@ -71,9 +71,9 @@ export default function ProjectSection() {
           </div>
         ))}
       </div>
-      <ul className="col-span-3 col-start-6">
+      <ul className="sm:col-span-3 sm:col-start-6">
         <li className="pb-4">
-          <h2 className="pb-4">Projects</h2>
+          <h2 className="pb-4 text-4xl sm:text-[64px]">Projects</h2>
           <hr className="border-foreground rounded-md" />
         </li>
         {projects.map((project) => (

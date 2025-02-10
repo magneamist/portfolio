@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`${alexandria.variable} ${raleway.variable} ${lora.variable} relative antialiased bg-background text-foreground`}
       >
         <NavBar />
-        <main className="px-10 max-w-[2000px] mx-auto">{children}</main>
+        <main className="px-4 sm:px-10 max-w-[2000px] mx-auto">{children}</main>
         <div className="noise" />
         <FloatingCircle />
       </body>
