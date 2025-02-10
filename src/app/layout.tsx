@@ -3,7 +3,6 @@ import { Alexandria, Lora, Raleway } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import FloatingCircle from "@/components/FloatingCircle";
-import Footer from "@/components/ContactCard";
 
 const alexandria = Alexandria({
   variable: "--font-alexandria",

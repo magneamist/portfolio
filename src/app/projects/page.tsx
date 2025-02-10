@@ -1,6 +1,4 @@
-import ProjectCard from "@/components/ProjectImage";
 import ProjectSection from "@/components/ProjectSection";
-import ProjectList from "@/components/ProjectSection";
 
 export default function Projects() {
   return (

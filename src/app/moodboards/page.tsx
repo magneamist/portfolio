@@ -1,9 +1,6 @@
-import Image from "next/image";
-import ButtonArrow from "@/components/ButtonArrow";
 import MyStyleMoodboard from "@/components/MyStyleMoodboard";
 import HomeMarquee from "@/components/HomeMarquee";
 import FamMarquee from "@/components/FamMarquee";
-import Marquee from "react-fast-marquee";
 import HobbiesSection from "@/components/HobbiesSection";
 
 export default function Moodboards() {

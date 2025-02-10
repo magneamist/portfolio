@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ButtonArrow from "@/components/ButtonArrow";
 import Link from "next/link";
 
 export default function StudioGhibli() {

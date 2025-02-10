@@ -2,10 +2,7 @@ import Image from "next/image";
 import Skills from "@/components/Skills";
 import ButtonArrow from "@/components/ButtonArrow";
 import ContactCard from "@/components/ContactCard";
-import ProjectList from "@/components/ProjectSection";
-import ProjectCard from "@/components/ProjectImage";
 import ProjectSection from "@/components/ProjectSection";
-import Link from "next/link";
 import TransitionLink from "@/components/TransitionLink";
 
 export default function Home() {
