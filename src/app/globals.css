@@ -3,19 +3,112 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h1 {
+  font-size: 112px;
+  font-weight: 800;
+  font-family: var(--font-alexandria);
 }
+
+h2 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 50px;
+  font-family: var(--font-alexandria);
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: var(--font-alexandria);
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.96px;
+  font-family: var(--font-lora);
+}
+.noise {
+  position: fixed;
+  z-index: -1;
+  top: -300%;
+  left: -150%;
+  width: 600%;
+  height: 600%;
+  animation: noise 7s steps(10) infinite;
+  background-image: url('/noise.png'), url('/bgColor.png');
+  background-size: 200px;
+  background-repeat: repeat;
+  pointer-events: none;
+  opacity: 0.7;
+  background-blend-mode:color-burn;
+}
+
+main {
+  transition-property: opacity, filter;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.main-transition {
+  opacity: 0;
+  filter: blur(10px);
+}
+
+#bulb1, #bulb2 {
+  transition-property: transform, opacity;
+  transition-duration: 1000ms;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition-timing-function: ease-in-out;
+}
+
+.bulb-transition {
+  transform: scale(0.6);
+  opacity: 0;
+}
+
+@keyframes noise {
+  /* 0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  } */
+}
+

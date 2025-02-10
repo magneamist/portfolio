@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Alexandria, Lora, Raleway } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
+import FloatingCircle from "@/components/FloatingCircle";
+import Footer from "@/components/ContactCard";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const alexandria = Alexandria({
+  variable: "--font-alexandria",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+});
+
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
 });
 
@@ -25,9 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${alexandria.variable} ${raleway.variable} ${lora.variable} relative antialiased bg-background text-foreground`}
       >
-        {children}
+        <NavBar />
+        <main className="px-10 max-w-[2000px] mx-auto">{children}</main>
+        <div className="noise" />
+        <FloatingCircle />
       </body>
     </html>
   );

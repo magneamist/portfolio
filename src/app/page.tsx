@@ -1,101 +1,65 @@
 import Image from "next/image";
+import Skills from "@/components/Skills";
+import ButtonArrow from "@/components/ButtonArrow";
+import ContactCard from "@/components/ContactCard";
+import ProjectList from "@/components/ProjectSection";
+import ProjectCard from "@/components/ProjectImage";
+import ProjectSection from "@/components/ProjectSection";
+import Link from "next/link";
+import TransitionLink from "@/components/TransitionLink";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col">
+      <div className="flex flex-col gap-14">
+        <div className="flex flex-col items-center gap-6 h-screen justify-end ">
+          <p className="text-3xl text-center">web designer & developer</p>
+          <h1 className="text-fluid text-center w-full whitespace-nowrap">
+            Magnea Mist Ólafsdóttir
+          </h1>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="grid grid-cols-8  h-[670px] gap-10">
+          <div className="bg-green rounded-t-[300px] rounded-b-3xl col-span-3 relative h-[550px] mx-10 flex justify-center hover:scale-105  duration-500 ease-in-out">
+            <Image
+              src="/Profile.png"
+              width={350}
+              height={500}
+              className="object-contain object-bottom absolute bottom-0"
+              alt="Screenshots of the dashboard project showing desktop version"
+            ></Image>
+          </div>
+          <div className="col-span-5 col-start-4 w-full">
+            <div className="flex flex-col gap-10">
+              <p className="size-body">
+                Hi, I’m{" "}
+                <TransitionLink href="/moodboards">
+                  <span className="font-alexandria hover:font-extrabold hover:text-pink duration-500">
+                    Magnea
+                  </span>
+                </TransitionLink>
+                , a web development student with a Bachelor’s in Software
+                Engineering, where I’m also honing my skills in web design. My
+                passion lies in creating intuitive, visually stunning user
+                interfaces that balance creativity with functionality. With a
+                strong technical foundation, I design solutions that are
+                practical, impactful, and seamless to implement.
+                {/* I’m currently
+                seeking an internship to grow as a designer and contribute to
+                innovative projects. If you’re looking for someone with a blend
+                of creativity, attention to detail, and technical expertise, I’d
+                love to bring my skills to your team. */}
+              </p>
+              <ButtonArrow text="See my resume" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-screen justify-center gap-10 flex flex-col">
+        <h2 className="text-center">Skills & services</h2>
+        <Skills />
+      </div>
+      <ProjectSection />
+      <ContactCard />
     </div>
   );
 }
