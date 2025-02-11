@@ -16,18 +16,18 @@ export default function Home() {
           <h1 className="sm:text-fluid text-center w-full text-5xl leading-[60px] sm:leading-normal sm:whitespace-nowrap">
             Magnea Mist Ólafsdóttir
           </h1>
-          <div className="sm:hidden w-72 bg-green rounded-t-[200px] rounded-b-3xl relative h-[500px] flex justify-center">
+          <div className="sm:hidden w-64 bg-green rounded-t-[200px] rounded-b-3xl relative h-[450px] flex justify-center">
             <Image
               src="/Profile.png"
-              width={350}
-              height={500}
+              width={300}
+              height={400}
               className="object-contain object-bottom absolute bottom-0"
               alt="Screenshots of the dashboard project showing desktop version"
             ></Image>
           </div>
         </div>
         <div className="sm:grid sm:grid-cols-8 h-[670px] gap-10">
-          <div className="hidden bg-green rounded-t-[300px] rounded-b-3xl col-span-3 relative h-[550px] mx-10 sm:flex justify-center hover:scale-105  duration-500 ease-in-out">
+          <div className="hidden bg-sand rounded-t-[300px] rounded-b-3xl col-span-3 relative h-[550px] mx-10 sm:flex justify-center hover:scale-105  duration-500 ease-in-out">
             <Image
               src="/Profile.png"
               width={350}

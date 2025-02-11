@@ -20,7 +20,7 @@ export default function Project({
               className="h-full text-sand"
               alt="Arrow"
             />
-            <p className="text-2xl sm:text-4xl ">{project}</p>
+            <p className="text-2xl sm:text-4xl">{project}</p>
           </div>
         </div>
         <p className="text-base sm:text-2xl line-clamp-1 font-alexandria font-extralight">

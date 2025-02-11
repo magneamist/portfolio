@@ -23,6 +23,8 @@ export default {
         "sg-yellow": '#F29542',
         "vestra-green": '#7CE37F',
         "luna-blue": '#40567A',
+        "fs-green": '#646A28',
+        "fs-pink": '#FD7463',
       },
       fontFamily: {
         alexandria: ["var(--font-alexandria)"],

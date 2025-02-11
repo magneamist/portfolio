@@ -4,11 +4,15 @@ export default function Projects() {
   return (
     <div>
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col items-left gap-6 h-screen justify-end ">
-          <h1 className="font-alexandria text-left sm:text-left">Projects</h1>
+        <div className="flex flex-col items-left gap-6 h-screen sm:justify-end justify-center">
+          <h1 className="font-alexandria sm:text-left text-center w-full text-5xl">
+            Projects
+          </h1>
         </div>
       </div>
+      <div className="h-screen flex justify-center items-center">
       <ProjectSection />
+      </div>
       {/* <div className="flex flex-row gap-10 justify-between">
         <div className="w-[900px] h-[715px] bg-foreground rounded-t-3xl"></div>
         <div>
