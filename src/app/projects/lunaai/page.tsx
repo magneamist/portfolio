@@ -1,7 +1,16 @@
 import NextProjectSection from "@/components/NextProjectSection";
 import Image from "next/image";
+import ProjectText from "@/components/ProjectText";
 
 export default function Luna() {
+  const color = "#40567A";
+  const title = "Lúna AI";
+  const year = 2024;
+  const duration = "2 weeks";
+  const role = ["Branding", "UI/UX design"];
+  const description =
+    "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
+
   return (
     <div className="flex flex-col items-center gap-14">
       <div className="px-44">
@@ -15,42 +24,14 @@ export default function Luna() {
           />
         </div>
         <div className="flex flex-col gap-14">
-          <div className="flex flex-col gap-6 py-14">
-            <div className="">
-              <h1 className="text-8xl pb-4 text-luna-blue">Lúna AI</h1>
-              <hr className="border-2 rounded-full border-foreground" />
-            </div>
-            <div className="flex flex-row gap-6">
-              <div className="flex flex-col gap-8 w-full">
-                <div className="flex flex-col gap-3 ">
-                  <p className="font-alexandria text-luna-blue leading-6">
-                    Year
-                  </p>
-                  <p className=" leading-6">2024</p>
-                </div>
-                <div className="flex flex-col gap-3 ">
-                  <p className="font-alexandria text-luna-blue leading-6">
-                    Project duration
-                  </p>
-                  <p className=" leading-6">8 hours</p>
-                </div>
-                <div className="flex flex-col gap-3 ">
-                  <p className="font-alexandria text-luna-blue leading-6">
-                    Role
-                  </p>
-                  <p className=" leading-6">Branding</p>
-                  <p className=" leading-6">UI/UX design</p>
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Consequat quam odio
-                nulla eget suspendisse. Phasellus urna gravida vitae urna nibh.
-                Et nisl bibendum faucibus enim sodales at. Est risus ut nulla
-                sit integer est. Senectus fermentum pharetra nisi pellentesque
-                dis sit nec.
-              </p>
-            </div>
-          </div>
+          <ProjectText
+            color={color}
+            title={title}
+            year={year}
+            duration={duration}
+            role={role}
+            description={description}
+          ></ProjectText>
           <Image
             src="/projects/luna-font1.png"
             width={1050}

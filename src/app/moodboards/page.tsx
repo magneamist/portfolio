@@ -6,8 +6,8 @@ import HobbiesSection from "@/components/HobbiesSection";
 export default function Moodboards() {
   return (
     <div className="flex flex-col gap-12">
-      <div className="h-screen flex flex-col justify-between pb-5">
-        <div className="flex flex-row gap-10 pt-20">
+      <div className="h-screen flex flex-col gap-16 pb-5">
+        <div className="flex gap-10 pt-24">
           <div className="pt-6">
             <h1 className="font-alexandria text-left text-4xl">Moodboards</h1>
             <p>
@@ -19,11 +19,10 @@ export default function Moodboards() {
           <MyStyleMoodboard />
         </div>
         <HomeMarquee />
+        <HobbiesSection />
+        <FamMarquee />
       </div>
-      <div className="h-screen flex flex-col gap-12">
-        <HobbiesSection></HobbiesSection>
-        <FamMarquee></FamMarquee>
-      </div>
+      <div className="h-screen flex flex-col gap-12"></div>
     </div>
   );
 }

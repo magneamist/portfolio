@@ -50,10 +50,10 @@ p {
   height: 600%;
   animation: noise 7s steps(10) infinite;
   background-image: url('/noise.png'), url('/bgColor.png');
-  background-size: 200px;
+  background-size: 250px;
   background-repeat: repeat;
   pointer-events: none;
-  opacity: 0.7;
+  opacity: 0.5;
   background-blend-mode:color-burn;
 }
 @media (max-width: 768px) {
@@ -84,6 +84,12 @@ main {
 .bulb-transition {
   transform: scale(0.6);
   opacity: 0;
+}
+
+@layer utilities {
+  .rotate-x-90 {
+    transform: rotateX(90deg);
+  }
 }
 
 @keyframes noise {
@@ -118,4 +124,6 @@ main {
     transform: translate(-10%, 10%);
   } */
 }
+
+
 

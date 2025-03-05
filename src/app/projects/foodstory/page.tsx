@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProjectText from "@/components/ProjectText";
 
-export default function StudioGhibli() {
+export default function Foodstory() {
+  const color = "#FD7463";
+  const title = "Food story";
+  const year = 2024;
+  const duration = "4 weeks";
+  const role = ["Branding", "UI/UX design", "Web development"];
+  const description =
+    "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
+
   return (
-    <div className="flex flex-col items-center gap-14">
-      <div className="px-44">
-        <div className=" min-h-[740px]  h-screen flex justify-center items-center">
+    <div className="flex flex-col items-center gap-4 sm:gap-14">
+      <div className="sm:px-44 py-10">
+        <div className="sm:min-h-[740px]  sm:h-screen flex justify-center items-center">
           <Image
             src="/projects/foodstory.png"
             width={1050}
@@ -14,54 +23,26 @@ export default function StudioGhibli() {
             className="rounded-[50px]"
           />
         </div>
-        <div className="flex flex-col gap-14">
-          <div className="flex flex-col gap-6 py-14">
-            <div className="">
-              <h1 className="text-8xl pb-4 text-fs-pink">Food story</h1>
-              <hr className="border-2 rounded-full border-foreground" />
-            </div>
-            <div className="flex flex-row gap-6">
-              <div className="flex flex-col gap-8 w-full">
-                <div className="flex flex-col gap-3 ">
-                  <p className="font-alexandria font-semibold text-fs-pink leading-6">
-                    Year
-                  </p>
-                  <p className="font-light leading-6">2024</p>
-                </div>
-                <div className="flex flex-col gap-3 ">
-                  <p className=" font-alexandria font-semibold text-fs-pink leading-6">
-                    Project duration
-                  </p>
-                  <p className="font-light leading-6">8 hours</p>
-                </div>
-                <div className="flex flex-col gap-3 ">
-                  <p className="font-alexandria font-semibold text-fs-pink leading-6">
-                    Role
-                  </p>
-                  <p className=" font-light leading-6">Redesign</p>
-                  <p className=" font-light leading-6">UI/UX design</p>
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Consequat quam odio
-                nulla eget suspendisse. Phasellus urna gravida vitae urna nibh.
-                Et nisl bibendum faucibus enim sodales at. Est risus ut nulla
-                sit integer est. Senectus fermentum pharetra nisi pellentesque
-                dis sit nec.
-              </p>
-            </div>
-          </div>
+        <div className="flex flex-col gap-3 sm:gap-14">
+          <ProjectText
+            color={color}
+            title={title}
+            year={year}
+            duration={duration}
+            role={role}
+            description={description}
+          ></ProjectText>
           <Image
             src="/projects/sg-font.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[50px] border-2 border-grey"
+            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
         </div>
       </div>
-      <div className="w-full h-40 px-44">
-        <div className="flex flex-row justify-end  items-center">
+      <div className="w-full sm:h-40 sm:px-44">
+        <div className="flex flex-row justify-center sm:justify-end  items-center">
           <Link href="/" className="group overflow-hidden w-fit">
             <div className="flex items-center gap-3 -translate-x-11 duration-300 group-hover:translate-x-0">
               <Image
@@ -72,9 +53,11 @@ export default function StudioGhibli() {
                 alt="Arrow"
               />
               <div className="flex flex-row gap-3 justify-center items-center">
-                <h3 className="font-alexandria">Homepage</h3>
+                <h3 className="font-alexandria text-xl sm:text-4xl">
+                  Homepage
+                </h3>
                 <p>-</p>
-                <h3 className="font-lora font-extralight ">
+                <h3 className="font-lora font-extralight text-xl sm:text-4xl whitespace-nowrap">
                   All projects done
                 </h3>
               </div>

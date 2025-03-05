@@ -20,7 +20,7 @@ export default function Contact() {
           +354 8581470
         </Link>
       </div>
-      <div className="hidden sm:block absolute left-0 bottom-6">
+      <div className="hidden sm:block absolute left-0 bottom-0">
         <h1 className="font-alexandria sm:text-left">Contact</h1>
       </div>
     </div>

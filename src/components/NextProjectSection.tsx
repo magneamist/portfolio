@@ -9,7 +9,7 @@ interface NextProjectProps {
 export default function NextProjectSection(Props: NextProjectProps) {
   return (
     <div className="w-full sm:h-40 sm:px-44">
-      <div className="flex flex-row justify-center sm:justify-end items-center">
+      <div className="flex flex-row justify-center items-center">
         <Link href={Props.href} className="group overflow-hidden w-fit">
           <div className="flex items-center gap-3 -translate-x-11 duration-300 group-hover:translate-x-0">
             <Image

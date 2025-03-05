@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function MyStyleMoodboard() {
   return (
     <div className="flex flex-col items-start">
-      <p className="font-alexandria">My style</p>
       <div className="h-[390px] w-[605px] relative">
         <Image
           src="/style/whitedress.png"

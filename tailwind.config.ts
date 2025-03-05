@@ -21,6 +21,7 @@ export default {
         "sg-red": '#AE514B',
         "sg-blue": '#2C94D1',
         "sg-yellow": '#F29542',
+        "sg-green": '#92C863',
         "vestra-green": '#7CE37F',
         "luna-blue": '#40567A',
         "fs-green": '#646A28',
@@ -35,7 +36,8 @@ export default {
         projects: "calc(100vh - 168px)",
       },
       fontSize: {
-        fluid: 'clamp(2rem, 7.5vw, 150px)'
+        fluid: 'clamp(2rem, 7.5vw, 150px)',
+        smallfluid: 'clamp(1rem, 8vw, 150px)',
       },
       keyframes:{
       float: {
@@ -48,10 +50,15 @@ export default {
           transform: 'translateY(calc(100% - 150px))',
         }
       },
+      // rotate: {
+      //   'x-90': 'rotateX(90deg)',
+      //   'x-180': 'rotateX(180deg)',
+      // }
     },
     animation: {
       float: 'float 20s ease-in-out infinite',
     },
+    
   },
 },
   plugins: [],

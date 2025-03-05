@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function HomeMarquee() {
   return (
     <div className="flex flex-col">
-      <p className="font-alexandria">Home</p>
       <div className="-mx-10">
         <Marquee autoFill={true} pauseOnHover={true}>
           <Image
@@ -38,6 +37,13 @@ export default function HomeMarquee() {
           <Image
             src="/home/3-home.jpg"
             width={249}
+            height={308}
+            className="rounded-2xl mx-2"
+            alt=""
+          ></Image>
+          <Image
+            src="/home/svefn.png"
+            width={230}
             height={308}
             className="rounded-2xl mx-2"
             alt=""

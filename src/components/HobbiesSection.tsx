@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function HobbiesSection() {
@@ -15,16 +15,19 @@ export default function HobbiesSection() {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  const goToPreviousImage = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setTimeout(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === 0 ? hobbyImages.length - 1 : prevIndex - 1
-      );
-      setIsTransitioning(false);
-    }, 100);
+  const resetTimer = () => {
+    // Clear existing timer
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+
+    // Only set a new timer if not hovered
+    if (!isHovered) {
+      timerRef.current = setInterval(goToNextImage, 3000);
+    }
   };
 
   const goToNextImage = () => {
@@ -38,9 +41,42 @@ export default function HobbiesSection() {
     }, 100);
   };
 
+  const handleImageClick = () => {
+    goToNextImage();
+    resetTimer();
+  };
+
+  useEffect(() => {
+    // Initial timer setup
+    timerRef.current = setInterval(goToNextImage, 3000);
+
+    // Cleanup function
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    // Pause or resume timer based on hover state
+    if (isHovered) {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    } else {
+      resetTimer();
+    }
+  }, [isHovered]);
+
   return (
     <div className="flex flex-col gap-3 w-fit">
-      <div className="flex flex-col w-[500px] relative overflow-hidden h-[400px]">
+      <div
+        className="flex flex-col w-[500px] relative overflow-hidden h-[400px] hover:scale-105 duration-500 cursor-pointer"
+        onClick={handleImageClick}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         {hobbyImages.map((image, index) => (
           <div
             key={image}
@@ -63,34 +99,6 @@ export default function HobbiesSection() {
             />
           </div>
         ))}
-      </div>
-      <div className="flex flex-row gap-10 justify-between">
-        <button
-          onClick={goToPreviousImage}
-          disabled={isTransitioning}
-          className="disabled:opacity-50"
-        >
-          <Image
-            src={"/arrow.svg"}
-            width={32}
-            height={32}
-            alt="Previous"
-            className="rotate-180"
-          />
-        </button>
-        <button
-          onClick={goToNextImage}
-          disabled={isTransitioning}
-          className="disabled:opacity-50"
-        >
-          <Image
-            src={"/arrow.svg"}
-            width={32}
-            height={32}
-            alt="Next"
-            className=""
-          />
-        </button>
       </div>
     </div>
   );
