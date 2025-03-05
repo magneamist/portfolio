@@ -4,7 +4,6 @@ import ButtonArrow from "@/components/ButtonArrow";
 import ContactCard from "@/components/ContactCard";
 import ProjectSection from "@/components/ProjectSection";
 import TransitionLink from "@/components/TransitionLink";
-import Skill from "@/components/Skill";
 
 export default function Home() {
   return (
