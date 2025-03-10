@@ -8,8 +8,8 @@ export default function Vestra() {
   const year = 2024;
   const duration = "2 weeks";
   const role = ["Branding", "UI/UX design"];
-  const description = "It's a startup that";
-  // "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
+  const description =
+    "Vestra.is is a startup focused on AI-powered web solutions. They had an existing website, but it lacked a polished look and user-friendly experience. My role was to revamp their branding and UI/UX design. I introduced a sharper, more distinctive color palette, redesigned the interface for better usability, and created their new logo to establish a stronger visual identity.";
 
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-14">

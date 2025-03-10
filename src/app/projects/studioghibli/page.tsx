@@ -11,7 +11,8 @@ export default function StudioGhibli() {
   const duration = "2 days";
   const role = ["Redesign", "UI/UX design"];
   const description =
-    "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
+    "This was my first redesign project, focusing on improving the Ghibli Collection landing page. My goal was to create a more modern, visually appealing, and intuitive experience. I started by analyzing usability issues and design weaknesses, then reworked the layout with a clearer structure and improved visual hierarchy. The new design features better readability, enhanced navigation, and a refreshed aesthetic, making the site more engaging and accessible for users.";
+  // "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
 
   const [showOld, setShowOld] = useState(true);
   return (
@@ -89,7 +90,7 @@ export default function StudioGhibli() {
                 width={1050}
                 height={5000}
                 alt="Studio Ghibli primary typeface"
-                className="rounded-3xl col-span-1 blur-md hover:blur-none duration-500 transition-all"
+                className="rounded-3xl col-span-1"
               ></Image>
             </div>
           </div>

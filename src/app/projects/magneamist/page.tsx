@@ -9,7 +9,7 @@ export default function MagneaMist() {
   const duration = "4 weeks";
   const role = ["Branding", "UI/UX design", "Web development"];
   const description =
-    "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
+    "Designing and developing my own portfolio website was both a challenge and an opportunity to showcase my skills. I focused on creating a sleek, responsive, and user-friendly experience that reflects my style as a frontend developer and web designer. This site is a testament to my expertise in modern web technologies and clean UI/UX design.";
 
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">

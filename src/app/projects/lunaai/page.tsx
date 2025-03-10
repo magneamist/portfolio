@@ -9,7 +9,8 @@ export default function Luna() {
   const duration = "2 weeks";
   const role = ["Branding", "UI/UX design"];
   const description =
-    "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
+    "Lúna AI was a startup idea I developed, aiming to create a chatbot specifically designed to answer questions related to Icelandic legal statutes. The goal was to simplify access to legal information, making it easier for individuals to find relevant laws and regulations quickly and efficiently. I worked on the concept development and design of the chatbot, focusing on creating an intuitive interface and smooth user experience. The chatbot was designed to be easily navigable, providing accurate and accessible legal information at users' fingertips.";
+  // "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
 
   return (
     <div className="flex flex-col items-center gap-14">
