@@ -1,6 +1,8 @@
+"use client";
 import NextProjectSection from "@/components/NextProjectSection";
 import Image from "next/image";
 import ProjectText from "@/components/ProjectText";
+import ScrollableScreen from "@/components/ScrollableScreen";
 
 export default function Vestra() {
   const color = "#7CE37F";
@@ -16,7 +18,7 @@ export default function Vestra() {
       <div className="sm:px-44 py-10">
         <div className="sm:min-h-[740px] sm:h-screen flex justify-center items-center">
           <Image
-            src="/projects/vestraFinal.png"
+            src="/projects/vestra/vestra.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
@@ -33,26 +35,68 @@ export default function Vestra() {
             description={description}
           ></ProjectText>
           <Image
-            src="/projects/vestra-font1.png"
+            src="/projects/vestra/font1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px]"
           ></Image>
           <Image
-            src="/projects/vestra-font2.png"
+            src="/projects/vestra/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px]"
           ></Image>
           <Image
-            src="/projects/vestra-colors.png"
+            src="/projects/vestra/colors1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px]"
           ></Image>
+          <Image
+            src="/projects/vestra/colors2.png"
+            width={1050}
+            height={1000}
+            alt="Studio Ghibli primary typeface"
+            className="rounded-[20px] sm:rounded-[50px]"
+          ></Image>
+          <Image
+            src="/projects/vestra/logoDesign.png"
+            width={1050}
+            height={1000}
+            alt="Studio Ghibli primary typeface"
+            className="rounded-[20px] sm:rounded-[50px]"
+          ></Image>
+          <ScrollableScreen
+            imageSrc="/projects/vestra/home.png"
+            altText="Scrollable content"
+            width="max-w-4xl"
+            textSize="text-3xl"
+            title="Home"
+          />
+          <ScrollableScreen
+            imageSrc="/projects/vestra/umOkkur.png"
+            altText="Scrollable content"
+            width="max-w-4xl"
+            textSize="text-3xl"
+            title="About"
+          />
+          <ScrollableScreen
+            imageSrc="/projects/vestra/leitin.png"
+            altText="Scrollable content"
+            width="max-w-4xl"
+            textSize="text-3xl"
+            title="AI search"
+          />
+          <ScrollableScreen
+            imageSrc="/projects/vestra/skilmalar.png"
+            altText="Scrollable content"
+            width="max-w-4xl"
+            textSize="text-3xl"
+            title="Terms and conditions"
+          />
         </div>
       </div>
       <NextProjectSection

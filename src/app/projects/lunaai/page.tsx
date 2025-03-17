@@ -17,7 +17,7 @@ export default function Luna() {
       <div className="px-44">
         <div className=" min-h-[740px]  h-screen flex justify-center items-center">
           <Image
-            src="/projects/luna.png"
+            src="/projects/luna/luna.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
@@ -34,28 +34,89 @@ export default function Luna() {
             description={description}
           ></ProjectText>
           <Image
-            src="/projects/luna-font1.png"
+            src="/projects/luna/font1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[50px]"
           ></Image>
           <Image
-            src="/projects/luna-font2.png"
+            src="/projects/luna/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[50px]"
           ></Image>
           <Image
-            src="/projects/luna-colors.png"
+            src="/projects/luna/colors.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[50px]"
           ></Image>
+
+          <div className="flex flex-col items-center gap-6">
+            <span className="font-alexandria font-bold text-3xl">
+              Landing page
+            </span>
+            <Image
+              src="/projects/luna/home-desktop.png"
+              width={1050}
+              height={1000}
+              alt="Studio Ghibli primary typeface"
+              className="rounded-[10px]"
+            ></Image>
+          </div>
+          <div className="flex flex-col items-center gap-6">
+            <span className="font-alexandria font-bold text-3xl">
+              About page
+            </span>
+            <Image
+              src="/projects/luna/about-desktop.png"
+              width={1050}
+              height={1000}
+              alt="Studio Ghibli primary typeface"
+              className="rounded-[10px]"
+            ></Image>
+          </div>
+          <div className="flex flex-col items-center gap-6">
+            <span className="font-alexandria font-bold text-3xl">
+              User logged in and chat started
+            </span>
+            <Image
+              src="/projects/luna/loggedIn-desktop.png"
+              width={1050}
+              height={1000}
+              alt="Studio Ghibli primary typeface"
+              className="rounded-[10px]"
+            ></Image>
+          </div>
+          <div className="flex flex-col items-center gap-6">
+            <span className="font-alexandria font-bold text-3xl">
+              Create account page
+            </span>
+            <Image
+              src="/projects/luna/createAccount-desktop.png"
+              width={1050}
+              height={1000}
+              alt="Studio Ghibli primary typeface"
+              className="rounded-[10px]"
+            ></Image>
+          </div>
+          <div className="flex flex-col items-center gap-6">
+            <span className="font-alexandria font-bold text-3xl">
+              Reset password page
+            </span>
+            <Image
+              src="/projects/luna/reset-desktop.png"
+              width={1050}
+              height={1000}
+              alt="Studio Ghibli primary typeface"
+              className="rounded-[10px]"
+            ></Image>
+          </div>
           <Image
-            src="/projects/luna-mobile3.png"
+            src="/projects/luna/mobile.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"

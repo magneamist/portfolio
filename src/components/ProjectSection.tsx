@@ -18,31 +18,31 @@ export default function ProjectSection() {
     {
       name: "Magnea Mist",
       type: "portfolio",
-      src: "/projects/portfolio.png",
+      src: "/projects/magneamist/portfolio.png",
       link: "/projects/magneamist",
     },
     {
       name: "Vestra",
       type: "startup",
-      src: "/projects/vestraFinal.png",
+      src: "/projects/vestra/vestra.png",
       link: "/projects/vestra",
     },
     {
       name: "Lúna",
       type: "startup",
-      src: "/projects/luna.png",
+      src: "/projects/luna/luna.png",
       link: "/projects/lunaai",
     },
     {
       name: "Studio Ghibli",
       type: "school project",
-      src: "/projects/studioGhibli.png",
+      src: "/projects/studioghibli/studioGhibli.png",
       link: "/projects/studioghibli",
     },
     {
       name: "Food story",
       type: "group school project",
-      src: "/projects/foodstory.png",
+      src: "/projects/foodstory/foodstory.png",
       link: "/projects/foodstory",
     },
   ];

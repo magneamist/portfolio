@@ -16,7 +16,7 @@ export default function MagneaMist() {
       <div className="sm:px-44 py-10 w-full">
         <div className="sm:min-h-[740px] sm:h-screen flex justify-center items-center">
           <Image
-            src="/projects/portfolio.png"
+            src="/projects/magneamist/portfolio.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
@@ -33,35 +33,42 @@ export default function MagneaMist() {
             description={description}
           ></ProjectText>
           <Image
-            src="/projects/mmo-font1.png"
+            src="/projects/magneamist/font1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/mmo-font2.png"
+            src="/projects/magneamist/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/mmo-colors1.png"
+            src="/projects/magneamist/colors1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/mmo-colors2.png"
+            src="/projects/magneamist/colors2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/mmo-color-combo.png"
+            src="/projects/magneamist/colorCombo.png"
+            width={1050}
+            height={1000}
+            alt="Studio Ghibli primary typeface"
+            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+          ></Image>
+          <Image
+            src="/projects/magneamist/techStack.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"

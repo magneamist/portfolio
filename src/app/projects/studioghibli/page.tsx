@@ -3,6 +3,7 @@ import Image from "next/image";
 import NextProjectSection from "@/components/NextProjectSection";
 import ProjectText from "@/components/ProjectText";
 import { useState } from "react";
+import ScrollableScreen from "@/components/ScrollableScreen";
 
 export default function StudioGhibli() {
   const color = "#AE514B";
@@ -20,7 +21,7 @@ export default function StudioGhibli() {
       <div className="sm:px-44 py-10 w-full">
         <div className="sm:min-h-[740px]  sm:h-screen flex justify-center items-center">
           <Image
-            src="/projects/studioGhibli.png"
+            src="/projects/studioghibli/studioGhibli.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
@@ -37,28 +38,28 @@ export default function StudioGhibli() {
             description={description}
           ></ProjectText>
           <Image
-            src="/projects/sg-font.png"
+            src="/projects/studioghibli/font1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/sg-font2.png"
+            src="/projects/studioghibli/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px] border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/sg-color1.png"
+            src="/projects/studioghibli/colors1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
             className="rounded-[20px] sm:rounded-[50px] border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/sg-color2.png"
+            src="/projects/studioghibli/colors2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
@@ -67,67 +68,19 @@ export default function StudioGhibli() {
         </div>
       </div>
       <div className="flex flex-col items-center gap-14">
-        <div className="flex flex-col items-center gap-6">
-          <div className="grid grid-cols-2 gap-4 sm:gap-16 px-4 sm:px-10">
-            <div>
-              <h3 className="text-xl sm:text-4xl text-center pb-3 sm:pb-12">
-                <span className="text-sg-red font-extrabold">Old</span> page
-              </h3>
-              <Image
-                src="/projects/studioghibliwebpage.jpg"
-                width={1050}
-                height={5000}
-                alt="Studio Ghibli primary typeface"
-                className="rounded-3xl"
-              ></Image>
-            </div>
-            <div>
-              <h3 className="text-xl sm:text-4xl text-center pb-3 sm:pb-12">
-                <span className="text-sg-green">New</span> page
-              </h3>
-              <Image
-                src="/projects/MyStudioGhibli.png"
-                width={1050}
-                height={5000}
-                alt="Studio Ghibli primary typeface"
-                className="rounded-3xl col-span-1"
-              ></Image>
-            </div>
-          </div>
-        </div>
-        <div id="redesign">
-          <div className="flex gap-3 items-center justify-center pb-4">
-            <button
-              onClick={() => setShowOld(true)}
-              className={showOld ? "font-bold" : "font-normal"}
-            >
-              Old
-            </button>
-            <span>|</span>
-            <button
-              onClick={() => setShowOld(false)}
-              className={!showOld ? "font-bold" : "font-normal"}
-            >
-              New
-            </button>
-          </div>
-          {showOld ? (
-            <Image
-              src="/projects/studioghibliwebpage.jpg"
-              width={1050}
-              height={5000}
-              alt="Original Studio Ghibli webpage"
-              className="rounded-3xl"
-            />
-          ) : (
-            <Image
-              src="/projects/MyStudioGhibli.png"
-              width={1050}
-              height={5000}
-              alt="Redesigned Studio Ghibli webpage"
-              className="rounded-3xl"
-            />
-          )}
+        <div className="flex gap-10 justify-center items-center">
+          <ScrollableScreen
+            imageSrc="/projects/studioghibli/sgOld.jpg"
+            altText="Scrollable content"
+            textSize="text-4xl"
+            title="Old"
+          />
+          <ScrollableScreen
+            imageSrc="/projects/studioghibli/sgNew.png"
+            altText="Scrollable content"
+            textSize="text-4xl"
+            title="New"
+          />
         </div>
       </div>
       <NextProjectSection
