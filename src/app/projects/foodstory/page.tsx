@@ -23,7 +23,7 @@ export default function Foodstory() {
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
-            className="rounded-[50px]"
+            className="rounded-[20px] sm:rounded-[50px]"
           />
         </div>
         <div className="flex flex-col gap-3 sm:gap-14">
@@ -59,6 +59,13 @@ export default function Foodstory() {
           ></Image>
           <Image
             src="/projects/foodstory/colors2.png"
+            width={1050}
+            height={1000}
+            alt="Studio Ghibli primary typeface"
+            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+          ></Image>
+          <Image
+            src="/projects/foodstory/designSprint.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"

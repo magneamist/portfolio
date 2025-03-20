@@ -13,9 +13,9 @@ export default function Luna() {
   // "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
 
   return (
-    <div className="flex flex-col items-center gap-14">
-      <div className="px-44">
-        <div className=" min-h-[740px]  h-screen flex justify-center items-center">
+    <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">
+      <div className="sm:px-44 py-10 w-full">
+        <div className="sm:min-h-[740px]  sm:h-screen flex justify-center items-center">
           <Image
             src="/projects/luna/luna.png"
             width={1050}
@@ -24,7 +24,7 @@ export default function Luna() {
             className="rounded-[50px]"
           />
         </div>
-        <div className="flex flex-col gap-14">
+        <div className="flex flex-col gap-8 sm:gap-14">
           <ProjectText
             color={color}
             title={title}
@@ -38,25 +38,25 @@ export default function Luna() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[50px]"
+            className="rounded-[20px] sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/luna/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[50px]"
+            className="rounded-[20px] sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/luna/colors.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[50px]"
+            className="rounded-[20px] sm:rounded-[50px]"
           ></Image>
 
-          <div className="flex flex-col items-center gap-6">
-            <span className="font-alexandria font-bold text-3xl">
+          <div className="flex flex-col items-center gap-2 sm:gap-6">
+            <span className="font-alexandria font-bold text-xl sm:text-3xl">
               Landing page
             </span>
             <Image
@@ -64,11 +64,11 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[10px]"
+              className="rounded-[8px]"
             ></Image>
           </div>
-          <div className="flex flex-col items-center gap-6">
-            <span className="font-alexandria font-bold text-3xl">
+          <div className="flex flex-col items-center gap-2 sm:gap-6">
+            <span className="font-alexandria font-bold text-xl sm:text-3xl">
               About page
             </span>
             <Image
@@ -76,11 +76,11 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[10px]"
+              className="rounded-[8px]"
             ></Image>
           </div>
-          <div className="flex flex-col items-center gap-6">
-            <span className="font-alexandria font-bold text-3xl">
+          <div className="flex flex-col items-center gap-2 sm:gap-6">
+            <span className="font-alexandria font-bold text-xl sm:text-3xl">
               User logged in and chat started
             </span>
             <Image
@@ -88,11 +88,11 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[10px]"
+              className="rounded-[8px]"
             ></Image>
           </div>
-          <div className="flex flex-col items-center gap-6">
-            <span className="font-alexandria font-bold text-3xl">
+          <div className="flex flex-col items-center gap-2 sm:gap-6">
+            <span className="font-alexandria font-bold text-xl sm:text-3xl">
               Create account page
             </span>
             <Image
@@ -100,11 +100,11 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[10px]"
+              className="rounded-[8px]"
             ></Image>
           </div>
-          <div className="flex flex-col items-center gap-6">
-            <span className="font-alexandria font-bold text-3xl">
+          <div className="flex flex-col items-center gap-2 sm:gap-6">
+            <span className="font-alexandria font-bold text-xl sm:text-3xl">
               Reset password page
             </span>
             <Image
@@ -112,7 +112,7 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[10px]"
+              className="rounded-[8px]"
             ></Image>
           </div>
           <Image
@@ -120,7 +120,7 @@ export default function Luna() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[50px]"
+            className="rounded-[8px] sm:rounded-[50px]"
           ></Image>
         </div>
       </div>

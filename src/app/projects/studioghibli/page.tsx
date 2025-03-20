@@ -68,17 +68,17 @@ export default function StudioGhibli() {
         </div>
       </div>
       <div className="flex flex-col items-center gap-14">
-        <div className="flex gap-10 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-10 justify-center items-center">
           <ScrollableScreen
             imageSrc="/projects/studioghibli/sgOld.jpg"
             altText="Scrollable content"
-            textSize="text-4xl"
+            textSize="text-xl sm:text-4xl"
             title="Old"
           />
           <ScrollableScreen
             imageSrc="/projects/studioghibli/sgNew.png"
             altText="Scrollable content"
-            textSize="text-4xl"
+            textSize="text-xl sm:text-4xl"
             title="New"
           />
         </div>

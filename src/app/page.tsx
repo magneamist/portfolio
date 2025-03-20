@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import Skills from "@/components/Skills";
 import ButtonArrow from "@/components/ButtonArrow";
 import ContactCard from "@/components/ContactCard";
 import ProjectSection from "@/components/ProjectSection";
 import TransitionLink from "@/components/TransitionLink";
+import MobileMenu from "@/components/MobileMenu";
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
           <h1 className="sm:text-fluid text-center w-full text-5xl leading-[60px] sm:leading-normal sm:whitespace-nowrap">
             Magnea Mist Ólafsdóttir
           </h1>
-          <div className="sm:hidden w-64 bg-green rounded-t-[200px] rounded-b-3xl relative h-[450px] flex justify-center">
+          <div className="sm:hidden w-64 bg-sand rounded-t-[200px] rounded-b-3xl relative h-[450px] flex justify-center">
             <Image
               src="/Profile.png"
               width={300}
@@ -26,7 +28,7 @@ export default function Home() {
             ></Image>
           </div>
         </div>
-        <div className="sm:grid sm:grid-cols-8 h-[670px] gap-10">
+        <div className="sm:grid sm:grid-cols-8  sm:h-[670px] gap-10">
           <div className="hidden bg-sand rounded-t-[300px] rounded-b-3xl col-span-3 relative h-[550px] mx-10 sm:flex justify-center hover:scale-105  duration-500 ease-in-out">
             <Image
               src="/Profile.png"

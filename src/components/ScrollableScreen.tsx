@@ -78,7 +78,7 @@ const ScrollableScreen: React.FC<ScrollableScreenProps> = ({
   }, [handleWheel, calculateMaxScroll]);
 
   return (
-    <div className="flex flex-col items-center gap-6 ">
+    <div className="flex flex-col items-center gap-3 sm:gap-6">
       <span className={`font-alexandria font-bold ${textSize}`}>{title}</span>
       <div
         ref={containerRef}

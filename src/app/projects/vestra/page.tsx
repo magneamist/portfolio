@@ -73,28 +73,28 @@ export default function Vestra() {
             imageSrc="/projects/vestra/home.png"
             altText="Scrollable content"
             width="max-w-4xl"
-            textSize="text-3xl"
+            textSize="text-xl sm:text-3xl"
             title="Home"
           />
           <ScrollableScreen
             imageSrc="/projects/vestra/umOkkur.png"
             altText="Scrollable content"
             width="max-w-4xl"
-            textSize="text-3xl"
+            textSize="text-xl sm:text-3xl"
             title="About"
           />
           <ScrollableScreen
             imageSrc="/projects/vestra/leitin.png"
             altText="Scrollable content"
             width="max-w-4xl"
-            textSize="text-3xl"
+            textSize="text-xl sm:text-3xl"
             title="AI search"
           />
           <ScrollableScreen
             imageSrc="/projects/vestra/skilmalar.png"
             altText="Scrollable content"
             width="max-w-4xl"
-            textSize="text-3xl"
+            textSize="text-xl sm:text-3xl"
             title="Terms and conditions"
           />
         </div>
