@@ -36,7 +36,7 @@ p {
   font-family: var(--font-lora);
 }
 
-.noise {
+/* .noise {
   position: fixed;
   z-index: -1;
   top: -300%;
@@ -50,7 +50,37 @@ p {
   pointer-events: none;
   opacity: 0.5;
   background-blend-mode:color-burn;
+
+  will-change: background-position;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+} */
+
+.noise {
+  position: fixed;
+  z-index: -2; /* Change from -1 to -2 to ensure it's behind the floating circle */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport units instead of percentage */
+  height: 100vh;
+  animation: noise 7s steps(10) infinite;
+  background-image: url('/noise.png'), url('/bgColor.png');
+  background-size: 250px;
+  background-repeat: repeat;
+  pointer-events: none;
+  opacity: 0.5;
+  background-blend-mode: color-burn;
+  /* Help with mobile rendering */
+  will-change: background-position;
+  transform: translateZ(0);
 }
+
+/* Add this to ensure proper animation on mobile */
+@keyframes noise {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
 
 main {
   transition-property: opacity, filter;

@@ -15,7 +15,10 @@ const FloatingCircle = () => {
     color2 = "#F7BD96";
   }
   return (
-    <div className="fixed inset-0 w-full h-screen overflow-hidden -z-50">
+    <div
+      className="fixed inset-0 w-full h-screen overflow-hidden"
+      style={{ zIndex: -1 }}
+    >
       <div className="absolute w-full h-full mobile-container">
         <svg
           className="absolute rounded-full"
