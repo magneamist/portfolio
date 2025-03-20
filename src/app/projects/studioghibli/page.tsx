@@ -2,7 +2,6 @@
 import Image from "next/image";
 import NextProjectSection from "@/components/NextProjectSection";
 import ProjectText from "@/components/ProjectText";
-import { useState } from "react";
 import ScrollableScreen from "@/components/ScrollableScreen";
 
 export default function StudioGhibli() {
