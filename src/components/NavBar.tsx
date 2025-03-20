@@ -102,7 +102,7 @@ export default function NavBar() {
           >
             Contact
           </TransitionLink>
-          <div className="flex flex-row gap-1">
+          {/* <div className="flex flex-row gap-1">
             <Image
               src="../globe.svg"
               width={20}
@@ -110,7 +110,7 @@ export default function NavBar() {
               alt="Screenshots of the dashboard project showing desktop version"
             ></Image>
             <p className="font-lora text-xl">EN</p>
-          </div>
+          </div> */}
         </nav>
       )}
     </>
