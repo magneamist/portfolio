@@ -65,7 +65,7 @@ export default function Foodstory() {
             className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/foodstory/designSprint.png"
+            src="/projects/foodstory/designSprint1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"

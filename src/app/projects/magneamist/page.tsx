@@ -47,7 +47,7 @@ export default function MagneaMist() {
             className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
-            src="/projects/magneamist/colors1.png"
+            src="/projects/magneamist/colors1a.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
