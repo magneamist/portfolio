@@ -76,11 +76,16 @@ p {
 }
 
 /* Add this to ensure proper animation on mobile */
-@keyframes noise {
+/* @keyframes noise {
   0% { background-position: 0 0; }
   100% { background-position: 100% 100%; }
-}
+} */
 
+@media (max-width: 768px) {
+  .noise {
+    display: none;
+  }
+}
 
 main {
   transition-property: opacity, filter;
