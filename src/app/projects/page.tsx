@@ -74,7 +74,7 @@ export default function Projects() {
           <MobileProjects
             title="Studio Ghibli"
             link="/projects/studioghibli"
-            imgHref="/projects/studioghibli/studioghibli.png"
+            imgHref="/projects/studioghibli/studioGhibli.png"
             alt="Studio Ghibli project"
           />
           <MobileProjects
