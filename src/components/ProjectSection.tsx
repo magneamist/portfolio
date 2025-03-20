@@ -49,7 +49,7 @@ export default function ProjectSection() {
 
   return (
     <div className="sm:grid sm:grid-cols-8 gap-10 items-center sm:h-screen">
-      <div className="sm:col-span-5 relative h-full  hidden sm:block ">
+      <div className="xl:col-span-5 sm:col-span-4 relative h-full  hidden sm:block ">
         {projects.map((project) => (
           <div
             key={project.name}
@@ -71,7 +71,7 @@ export default function ProjectSection() {
           </div>
         ))}
       </div>
-      <ul className="sm:col-span-3 sm:col-start-6">
+      <ul className="xl:col-span-3 xl:col-start-6 sm:col-span-4 sm:col-start-5">
         <li className="pb-4">
           <h2 className="pb-4 text-4xl sm:text-[64px]">Projects</h2>
           <hr className="border-foreground rounded-md" />

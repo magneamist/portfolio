@@ -58,11 +58,11 @@ p {
 
 .noise {
   position: fixed;
-  z-index: -2; /* Change from -1 to -2 to ensure it's behind the floating circle */
-  top: 0;
-  left: 0;
-  width: 100vw; /* Use viewport units instead of percentage */
-  height: 100vh;
+  z-index: -1; /* Change from -1 to -2 to ensure it's behind the floating circle */
+  top: -300%;
+  left: -150%;
+  width: 600%;
+  height: 600%;
   animation: noise 7s steps(10) infinite;
   background-image: url('/noise.png'), url('/bgColor.png');
   background-size: 250px;
@@ -71,8 +71,8 @@ p {
   opacity: 0.5;
   background-blend-mode: color-burn;
   /* Help with mobile rendering */
-  will-change: background-position;
-  transform: translateZ(0);
+  /* will-change: background-position;
+  transform: translateZ(0); */
 }
 
 /* Add this to ensure proper animation on mobile */

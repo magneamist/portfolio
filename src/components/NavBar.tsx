@@ -5,6 +5,7 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetTitle,
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -45,6 +46,7 @@ export default function NavBar() {
             </svg>
           </SheetTrigger>
           <SheetContent className="w-screen flex items-center justify-center ">
+            <SheetTitle className="sr-only">Menu</SheetTitle>
             <nav className="text-center ">
               <ul className="flex flex-col gap-10">
                 <li>
@@ -61,7 +63,7 @@ export default function NavBar() {
                   <SheetClose asChild>
                     <Link
                       href="/projects"
-                      className="text-blue text-5xl font-bold hover:text-pink transition-colors duration-300"
+                      className="text-real-blue text-5xl font-bold hover:text-pink transition-colors duration-300"
                     >
                       Projects
                     </Link>
