@@ -30,31 +30,29 @@ export default function Projects() {
 
   // Calculate opacity and blur based on scroll position
   // Fade out from fully visible to invisible over a 300px scroll distance
-  const opacity = Math.max(0, 1 - scrollY / 300);
-  const blurValue = Math.min(10, scrollY / 30); // Increase blur up to 10px
+  const opacity = Math.max(0, 1 - scrollY / 200);
+  const blurValue = Math.min(10, scrollY / 20); // Increase blur up to 10px
 
   return (
     <div>
-      <div className="flex flex-col gap-10">
-        <div className="flex flex-col items-left gap-6 h-screen sm:justify-end justify-center fixed top-0 left-0 right-0 pointer-events-none">
-          <h1
-            className="font-alexandria sm:text-left text-center w-full text-5xl sm:text-[112px] sm:pb-4"
-            style={{
-              opacity: opacity,
-              filter: `blur(${blurValue}px)`,
-              transition: "opacity 0.2s, filter 0.2s",
-            }}
-          >
-            Projects
-          </h1>
-        </div>
+      <div className="flex flex-col max-sm:left-1/2 max-sm:-translate-x-1/2 sm:items-left gap-6 h-screen sm:justify-end justify-center fixed pointer-events-none ">
+        <h1
+          className="font-alexandria sm:text-left text-center text-5xl sm:text-[112px] sm:pb-4"
+          style={{
+            opacity: opacity,
+            filter: `blur(${blurValue}px)`,
+            transition: "opacity 0.2s, filter 0.2s",
+          }}
+        >
+          Projects
+        </h1>
       </div>
 
       {/* Empty spacer div to maintain layout with fixed header */}
       <div className="h-screen"></div>
 
       {isMobile ? (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 pb-8">
           <MobileProjects
             title="Magnea Mist"
             link="/projects/magneamist"
