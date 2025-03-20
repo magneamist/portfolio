@@ -15,7 +15,7 @@ export default function StudioGhibli() {
     "This was my first redesign project, focusing on improving the Ghibli Collection landing page. My goal was to create a more modern, visually appealing, and intuitive experience. I started by analyzing usability issues and design weaknesses, then reworked the layout with a clearer structure and improved visual hierarchy. The new design features better readability, enhanced navigation, and a refreshed aesthetic, making the site more engaging and accessible for users.";
   // "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
 
-  const [showOld, setShowOld] = useState(true);
+  // const [showOld, setShowOld] = useState(true);
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">
       <div className="sm:px-44 py-10 w-full">

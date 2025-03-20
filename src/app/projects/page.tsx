@@ -96,7 +96,6 @@ export default function Projects() {
 }
 
 const MobileProjects = ({
-  title,
   link,
   imgHref,
   alt,

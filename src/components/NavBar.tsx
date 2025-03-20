@@ -4,14 +4,10 @@ import TransitionLink from "./TransitionLink";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
-import HamburgerIcon from "./HamburgerIcon";
 import Link from "next/link";
 
 export default function NavBar() {

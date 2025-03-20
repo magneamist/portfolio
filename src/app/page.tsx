@@ -5,7 +5,6 @@ import ButtonArrow from "@/components/ButtonArrow";
 import ContactCard from "@/components/ContactCard";
 import ProjectSection from "@/components/ProjectSection";
 import TransitionLink from "@/components/TransitionLink";
-import MobileMenu from "@/components/MobileMenu";
 
 export default function Home() {
   return (
