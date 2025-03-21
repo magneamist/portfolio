@@ -31,7 +31,7 @@ export default function Projects() {
   // Calculate opacity and blur based on scroll position
   // Fade out from fully visible to invisible over a 300px scroll distance
   const opacity = Math.max(0, 1 - scrollY / 200);
-  const blurValue = Math.min(10, scrollY / 20); // Increase blur up to 10px
+  // const blurValue = Math.min(10, scrollY / 20); // Increase blur up to 10px
 
   return (
     <div>
@@ -40,7 +40,7 @@ export default function Projects() {
           className="font-alexandria sm:text-left text-center text-5xl sm:text-[112px] sm:pb-4"
           style={{
             opacity: opacity,
-            filter: `blur(${blurValue}px)`,
+            // filter: `blur(${blurValue}px)`,
             transition: "opacity 0.2s, filter 0.2s",
           }}
         >
