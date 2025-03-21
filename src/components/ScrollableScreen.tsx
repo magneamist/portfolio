@@ -82,7 +82,7 @@ const ScrollableScreen: React.FC<ScrollableScreenProps> = ({
       <span className={`font-alexandria font-bold ${textSize}`}>{title}</span>
       <div
         ref={containerRef}
-        className={`rounded-xl aspect-[16/10] drop-shadow-md ${width}`}
+        className={`rounded-lg aspect-[16/10] drop-shadow-md ${width}`}
         style={{
           cursor: maxScroll > 0 ? "ns-resize" : "default",
           position: "relative",

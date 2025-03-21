@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectText from "@/components/ProjectText";
 import FoodStoryLayoutPages from "@/components/FoodStoryLayoutPages";
+import NextProjectSection from "@/components/NextProjectSection";
 
 export default function Foodstory() {
   const color = "#FD7463";
@@ -15,18 +16,18 @@ export default function Foodstory() {
   // "Lorem ipsum dolor sit amet consectetur. Consequat quam odio nulla eget suspendisse. Phasellus urna gravida vitae urna nibh. Et nisl bibendum faucibus enim sodales at. Est risus ut nulla sit integer est. Senectus fermentum pharetra nisi pellentesque dis sit nec.";
 
   return (
-    <div className="flex flex-col items-center gap-4 sm:gap-14">
-      <div className="sm:px-44 py-10">
-        <div className="sm:min-h-[740px]  sm:h-screen flex justify-center items-center">
+    <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">
+      <div className="sm:px-44 pt-10 w-full">
+        <div className="sm:min-h-[740px] sm:h-screen flex justify-center items-center">
           <Image
             src="/projects/foodstory/foodstory.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           />
         </div>
-        <div className="flex flex-col gap-3 sm:gap-14">
+        <div className="flex flex-col gap-8 sm:gap-14">
           <ProjectText
             color={color}
             title={title}
@@ -40,64 +41,44 @@ export default function Foodstory() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
-
           <Image
             src="/projects/foodstory/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/foodstory/colors1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/foodstory/colors2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/foodstory/designSprint1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <FoodStoryLayoutPages />
         </div>
       </div>
-      <div className="w-full sm:h-40 sm:px-44">
-        <div className="flex flex-row justify-center sm:justify-end  items-center">
-          <Link href="/" className="group overflow-hidden w-fit">
-            <div className="flex items-center gap-3 -translate-x-11 duration-300 group-hover:translate-x-0">
-              <Image
-                src="/arrow.svg"
-                width={32}
-                height={32}
-                className="h-full text-sand"
-                alt="Arrow"
-              />
-              <div className="flex flex-row gap-3 justify-center items-center">
-                <h3 className="font-alexandria text-xl sm:text-4xl">
-                  Homepage
-                </h3>
-                <p>-</p>
-                <h3 className="font-lora font-extralight text-xl sm:text-4xl whitespace-nowrap">
-                  All projects done
-                </h3>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
+      <NextProjectSection
+        href="/"
+        next="All projects done"
+        project="Home"
+      ></NextProjectSection>
     </div>
   );
 }

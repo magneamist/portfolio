@@ -24,10 +24,10 @@ export default function StudioGhibli() {
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
-            className="rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           />
         </div>
-        <div className="flex flex-col gap-3 sm:gap-14">
+        <div className="flex flex-col gap-8 sm:gap-14">
           <ProjectText
             color={color}
             title={title}
@@ -41,28 +41,28 @@ export default function StudioGhibli() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
             src="/projects/studioghibli/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-2 border-grey"
           ></Image>
           <Image
             src="/projects/studioghibli/colors1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-2 border-grey"
           ></Image>
           <Image
             src="/projects/studioghibli/colors2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-2 border-grey"
           ></Image>
         </div>
       </div>

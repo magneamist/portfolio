@@ -13,17 +13,17 @@ export default function MagneaMist() {
 
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">
-      <div className="sm:px-44 pt-14">
+      <div className="sm:px-44 pt-10 w-full">
         <div className="sm:min-h-[740px] sm:h-screen flex justify-center items-center">
           <Image
             src="/projects/magneamist/portfolio.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
-            className="rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           />
         </div>
-        <div className="flex flex-col gap-3 sm:gap-14">
+        <div className="flex flex-col gap-8 sm:gap-14">
           <ProjectText
             color={color}
             title={title}
@@ -37,42 +37,42 @@ export default function MagneaMist() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
             src="/projects/magneamist/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
             src="/projects/magneamist/colors1a.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
             src="/projects/magneamist/colors2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
             src="/projects/magneamist/colorCombo.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
           <Image
             src="/projects/magneamist/techStack.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
+            className="rounded-3xl sm:rounded-[50px] border-[1px] sm:border-2 border-grey"
           ></Image>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import { FittedHeading } from "./FittedHeading";
+
 interface Props {
   color: string;
   title: string;
@@ -11,13 +13,14 @@ export default function ProjectText(props: Props) {
   return (
     <div className="flex flex-col gap-6 py-6 sm:py-14 w-full">
       <div className="w-full">
-        <h1
+        <FittedHeading color={props.color}>{props.title}</FittedHeading>
+        {/* <h1
           className="text-[clamp(2rem,14vw,6rem)] w-full font-bold leading-tight sm:leading-normal whitespace-nowrap overflow-hidden"
           style={{ color: props.color }}
         >
           {props.title}
-        </h1>
-        <hr className="hidden sm:block border-[1px] sm:border-2 rounded-full border-foreground mt-2" />
+        </h1> */}
+        <hr className="hidden sm:block border-[1px] sm:border-2 rounded-full border-foreground mt-4 mb-2" />
       </div>
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
         <div className="flex flex-col items-start justify-center sm:justify-start gap-8 w-full">

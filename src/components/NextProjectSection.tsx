@@ -4,15 +4,20 @@ import Link from "next/link";
 interface NextProjectProps {
   href: string;
   project: string;
+  next?: string;
 }
 
-export default function NextProjectSection(Props: NextProjectProps) {
+export default function NextProjectSection({
+  href,
+  project,
+  next = "Next project",
+}: NextProjectProps) {
   return (
     <>
       <div className="max-sm:hidden">
         <div className="w-full sm:h-40 sm:px-44">
           <div className="flex flex-row justify-center items-center">
-            <Link href={Props.href} className="group overflow-hidden w-fit">
+            <Link href={href} className="group overflow-hidden w-fit">
               <div className="flex items-center gap-3 -translate-x-11 duration-300 group-hover:translate-x-0">
                 <Image
                   src="/arrow.svg"
@@ -23,11 +28,11 @@ export default function NextProjectSection(Props: NextProjectProps) {
                 />
                 <div className="flex flex-row gap-3 justify-center items-center">
                   <h3 className="font-alexandria text-xl sm:text-4xl">
-                    Next project{" "}
+                    {next}{" "}
                   </h3>
                   <p>-</p>
                   <h3 className="font-lora font-extralight text-xl sm:text-4xl">
-                    {Props.project}
+                    {project}
                   </h3>
                 </div>
               </div>
@@ -37,14 +42,12 @@ export default function NextProjectSection(Props: NextProjectProps) {
       </div>
       <div className="sm:hidden w-full">
         <Link
-          href={Props.href}
+          href={href}
           className="group flex justify-between items-center py-6"
         >
-          <h3 className="font-alexandria text-xl">Next project </h3>
+          <h3 className="font-alexandria text-xl">{next} </h3>
           <div className="flex items-center gap-2">
-            <h3 className="font-lora font-extralight text-xl">
-              {Props.project}
-            </h3>
+            <h3 className="font-lora font-extralight text-xl">{project}</h3>
             <Image
               src="/arrow.svg"
               width={24}

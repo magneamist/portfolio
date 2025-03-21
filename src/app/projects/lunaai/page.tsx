@@ -14,14 +14,14 @@ export default function Luna() {
 
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">
-      <div className="sm:px-44 py-10 w-full">
-        <div className="sm:min-h-[740px]  sm:h-screen flex justify-center items-center">
+      <div className="sm:px-44 pt-10 w-full">
+        <div className="sm:min-h-[740px] sm:h-screen flex justify-center items-center">
           <Image
             src="/projects/luna/luna.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
-            className="rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           />
         </div>
         <div className="flex flex-col gap-8 sm:gap-14">
@@ -38,21 +38,21 @@ export default function Luna() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/luna/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/luna/colors.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
 
           <div className="flex flex-col items-center gap-2 sm:gap-6">
@@ -64,7 +64,7 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[8px]"
+              className="rounded-lg"
             ></Image>
           </div>
           <div className="flex flex-col items-center gap-2 sm:gap-6">
@@ -76,7 +76,7 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[8px]"
+              className="rounded-lg"
             ></Image>
           </div>
           <div className="flex flex-col items-center gap-2 sm:gap-6">
@@ -88,7 +88,7 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[8px]"
+              className="rounded-lg"
             ></Image>
           </div>
           <div className="flex flex-col items-center gap-2 sm:gap-6">
@@ -100,7 +100,7 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[8px]"
+              className="rounded-lg"
             ></Image>
           </div>
           <div className="flex flex-col items-center gap-2 sm:gap-6">
@@ -112,7 +112,7 @@ export default function Luna() {
               width={1050}
               height={1000}
               alt="Studio Ghibli primary typeface"
-              className="rounded-[8px]"
+              className="rounded-lg"
             ></Image>
           </div>
           <Image
@@ -120,7 +120,7 @@ export default function Luna() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[8px] sm:rounded-[50px]"
+            className="rounded-lg sm:rounded-[50px]"
           ></Image>
         </div>
       </div>

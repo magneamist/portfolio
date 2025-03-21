@@ -14,18 +14,18 @@ export default function Vestra() {
     "Vestra.is is a startup focused on AI-powered web solutions. They had an existing website, but it lacked a polished look and user-friendly experience. My role was to revamp their branding and UI/UX design. I introduced a sharper, more distinctive color palette, redesigned the interface for better usability, and created their new logo to establish a stronger visual identity.";
 
   return (
-    <div className="flex flex-col items-center gap-4 sm:gap-14">
-      <div className="sm:px-44 py-10">
+    <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">
+      <div className="sm:px-44 pt-10 w-full">
         <div className="sm:min-h-[740px] sm:h-screen flex justify-center items-center">
           <Image
             src="/projects/vestra/vestra.png"
             width={1050}
             height={2000}
             alt="Screenshot of Studio Ghibli project"
-            className="rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           />
         </div>
-        <div className="flex flex-col gap-3 sm:gap-14">
+        <div className="flex flex-col gap-8 sm:gap-14">
           <ProjectText
             color={color}
             title={title}
@@ -39,35 +39,35 @@ export default function Vestra() {
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/vestra/font2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/vestra/colors1.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/vestra/colors2.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <Image
             src="/projects/vestra/logoDesign.png"
             width={1050}
             height={1000}
             alt="Studio Ghibli primary typeface"
-            className="rounded-[20px] sm:rounded-[50px]"
+            className="rounded-3xl sm:rounded-[50px]"
           ></Image>
           <ScrollableScreen
             imageSrc="/projects/vestra/home.png"
