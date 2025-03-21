@@ -3,22 +3,22 @@ import Image from "next/image";
 
 export default function FamMarquee() {
   const imageList = [
-    "/fam/barbie1.jpg",
-    "/fam/bbg1.jpg",
     "/fam/bath.png",
+    "/fam/bbg1.jpg",
     "/fam/dogs.png",
-    "/fam/gogntur1.jpg",
     "/fam/fam.png",
-    "/fam/girls.jpg",
     "/fam/kellingar.png",
-    "/fam/kisi.png",
+    // "/fam/kisi.png",
     "/fam/knus1.jpg",
-    "/fam/maogpa1.jpg",
+    // "/fam/maogpa1.jpg",
+    // "/fam/solbad.png",
+    // "/fam/namibia1.jpg",
+    "/fam/skydive1.jpg",
+    "/fam/girls.jpg",
     "/fam/mateikna.png",
     "/fam/mosiogpiano.png",
-    "/fam/namibia1.jpg",
-    "/fam/skydive1.jpg",
-    "/fam/solbad.png",
+    "/fam/gogntur1.jpg",
+    "/fam/barbie1.jpg",
     "/fam/tumi.png",
   ];
 
