@@ -40,13 +40,14 @@ export default function Home() {
           <div className="sm:col-span-5 sm:col-start-4 w-full">
             <div className="flex flex-col gap-5 sm:gap-10 items-center sm:items-start">
               <p className="leading-[40px] text-xl sm:text-2xl text-center sm:text-left sm:leading-loose">
-                Hi, I’m{" "}
+                Hi Svef! I’m{" "}
                 <TransitionLink href="/moodboards">
                   <span className="font-alexandria hover:font-extrabold hover:text-pink duration-500">
                     Magnea
                   </span>
                 </TransitionLink>
-                , a web development student with a Bachelor’s in Software
+                and I’m looking for a job. If you’re interested get in touch.
+                I’m a web development student with a Bachelor’s in Software
                 Engineering, where I’m also honing my skills in web design. My
                 passion lies in creating intuitive, visually stunning user
                 interfaces that balance creativity with functionality. With a
