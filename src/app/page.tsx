@@ -46,7 +46,7 @@ export default function Home() {
                     Magnea
                   </span>
                 </TransitionLink>
-                and I’m looking for a job. If you’re interested get in touch.
+                 and I’m looking for a job. If you’re interested get in touch.
                 I’m a web development student with a Bachelor’s in Software
                 Engineering, where I’m also honing my skills in web design. My
                 passion lies in creating intuitive, visually stunning user
