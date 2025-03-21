@@ -23,7 +23,7 @@ export default function FamMarquee() {
   ];
 
   return (
-    <div className="-mx-10">
+    <div className="-mx-4 sm:-mx-10">
       <Marquee
         autoFill={true}
         pauseOnHover={true}
