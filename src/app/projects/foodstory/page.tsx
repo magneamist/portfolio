@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import ProjectText from "@/components/ProjectText";
 import FoodStoryLayoutPages from "@/components/FoodStoryLayoutPages";
 import NextProjectSection from "@/components/NextProjectSection";
