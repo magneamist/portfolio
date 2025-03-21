@@ -73,15 +73,15 @@ export default function Skills() {
           <ul className="col-span-12 md:col-span-6 md:col-start-4 flex flex-col justify-center my-0 gap-4">
             <div className="flex gap-2 justify-center">
               <li>
-                <Skill text="UI design"></Skill>
+                <Skill text="Figma"></Skill>
               </li>
             </div>
             <div className="flex gap-2 justify-center">
               <li>
-                <Skill text="TypeScript"></Skill>
+                <Skill text="UI design"></Skill>
               </li>
               <li>
-                <Skill text="Figma"></Skill>
+                <Skill text="UX design"></Skill>
               </li>
             </div>
             <div className="flex gap-2 justify-center">
@@ -89,7 +89,7 @@ export default function Skills() {
                 <Skill text="React"></Skill>
               </li>
               <li>
-                <Skill text="Tailwind CSS"></Skill>
+                <Skill text="CSS/SCSS"></Skill>
               </li>
               <li>
                 <Skill text="Next.js"></Skill>
@@ -97,10 +97,10 @@ export default function Skills() {
             </div>
             <div className="flex gap-2 justify-center">
               <li>
-                <Skill text="UX design"></Skill>
+                <Skill text="Tailwind CSS"></Skill>
               </li>
               <li>
-                <Skill text="CSS/SCSS"></Skill>
+                <Skill text="TypeScript"></Skill>
               </li>
             </div>
             <div className="flex gap-2 justify-center">

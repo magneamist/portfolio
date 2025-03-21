@@ -47,13 +47,13 @@ export default function NavBar() {
           </SheetTrigger>
           <SheetContent className="w-screen flex items-center justify-center ">
             <SheetTitle className="sr-only">Menu</SheetTitle>
-            <nav className="text-center ">
+            <nav className="text-center z-50">
               <ul className="flex flex-col gap-10">
                 <li>
                   <SheetClose asChild>
-                    <Link
+                    <Link 
                       href="/"
-                      className="text-pink text-5xl font-bold hover:text-pink transition-colors duration-300"
+                      className=" text-5xl font-bold hover:text-pink transition-colors duration-300"
                     >
                       Home
                     </Link>
@@ -63,7 +63,7 @@ export default function NavBar() {
                   <SheetClose asChild>
                     <Link
                       href="/projects"
-                      className="text-real-blue text-5xl font-bold hover:text-pink transition-colors duration-300"
+                      className=" text-5xl font-bold hover:text-pink transition-colors duration-300"
                     >
                       Projects
                     </Link>
@@ -73,7 +73,7 @@ export default function NavBar() {
                   <SheetClose asChild>
                     <Link
                       href="/contact"
-                      className="text-orange text-5xl font-bold hover:text-pink transition-colors duration-300"
+                      className=" text-5xl font-bold hover:text-pink transition-colors duration-300"
                     >
                       Contact
                     </Link>
