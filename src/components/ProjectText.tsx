@@ -19,7 +19,7 @@ export default function ProjectText(props: Props) {
         </h1>
         <hr className="hidden sm:block border-[1px] sm:border-2 rounded-full border-foreground mt-2" />
       </div>
-      <div className="flex flex-col sm:flex-row gap-12">
+      <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
         <div className="flex flex-col items-start justify-center sm:justify-start gap-8 w-full">
           <div className="flex flex-col gap-3">
             <p
@@ -53,7 +53,15 @@ export default function ProjectText(props: Props) {
             ))}
           </div>
         </div>
-        <p className="">{props.description}</p>
+        <div className="flex flex-col gap-3">
+          <p
+            className="sm:hidden font-alexandria font-semibold leading-6"
+            style={{ color: props.color }}
+          >
+            About the project
+          </p>
+          <p className="max-sm:leading-relaxed">{props.description}</p>
+        </div>
       </div>
     </div>
   );

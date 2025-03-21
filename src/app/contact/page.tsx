@@ -9,13 +9,13 @@ export default function Contact() {
       <div className="flex flex-col gap-6 text-center">
         <Link
           href="mailto:magneamist@gmail.com"
-          className="font-lora font-light text-2xl sm:text-4xl hover:text-pink  "
+          className="font-lora font-light text-2xl sm:text-4xl sm:hover:text-pink  "
         >
           magneamist@gmail.com
         </Link>
         <Link
           href="tel:+3548581470"
-          className="font-lora font-light text-2xl sm:text-4xl hover:text-pink"
+          className="font-lora font-light text-2xl sm:text-4xl sm:hover:text-pink"
         >
           +354 8581470
         </Link>

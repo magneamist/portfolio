@@ -17,8 +17,8 @@ export default function StudioGhibli() {
   // const [showOld, setShowOld] = useState(true);
   return (
     <div className="flex flex-col items-center gap-4 sm:gap-14 w-full">
-      <div className="sm:px-44 py-10 w-full">
-        <div className="sm:min-h-[740px]  sm:h-screen flex justify-center items-center">
+      <div className="sm:px-44 pt-10 w-full">
+        <div className="sm:min-h-[740px] sm:h-screen flex justify-center items-center">
           <Image
             src="/projects/studioghibli/studioGhibli.png"
             width={1050}
