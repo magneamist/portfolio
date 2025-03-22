@@ -46,20 +46,16 @@ export default function Home() {
                     Magnea{" "}
                   </span>
                 </TransitionLink>
-                a web designer and front-end developer with a Bachelor's degree
-                in Software Engineering. Right now, I&apos;m honing my skills at
-                the Reykjavík Academy of Web Development, where I bridge the gap
-                between design and code. I thrive on crafting interfaces that
-                aren&apos;t just visually compelling but structured with intent.
-                I believe great design is more than just aesthetics, it&apos;s
-                about clarity, flow, and creating seamless experiences that feel
-                effortless for users. I'm on the lookout for exciting
-                opportunities, so if you're interested, get in touch!
-                {/* I’m currently
-                seeking an internship to grow as a designer and contribute to
-                innovative projects. If you’re looking for someone with a blend
-                of creativity, attention to detail, and technical expertise, I’d
-                love to bring my skills to your team. */}
+                a web designer and front-end developer with a Bachelor&apos;s
+                degree in Software Engineering. Right now, I&apos;m honing my
+                skills at the Reykjavík Academy of Web Development, where I
+                bridge the gap between design and code. I thrive on crafting
+                interfaces that aren&apos;t just visually compelling but
+                structured with intent. I believe great design is more than just
+                aesthetics, it&apos;s about clarity, flow, and creating seamless
+                experiences that feel effortless for users. I&apos;m on the
+                lookout for exciting opportunities, so if you&apos;re
+                interested, get in touch!
               </p>
               <ButtonArrow text="See my resume" />
             </div>
