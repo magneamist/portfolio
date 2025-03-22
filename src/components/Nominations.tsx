@@ -7,13 +7,13 @@ export default function Nominations() {
       <h2 className="text-4xl sm:text-[64px]">Nominations</h2>
       <div className="flex flex-col sm:flex-row items-center gap-4">
         <Image
-          src="/svef.svg"
+          src="../svef.svg"
           width={200}
           height={300}
           className="max-sm:hidden"
           alt="The Icelandic Web Awards logo"
         ></Image>
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center sm:items-start gap-2">
           <p className="text-xl text-center sm:text-4xl">
             The Icelandic Web Awards 2025
           </p>
