@@ -8,22 +8,22 @@ export default function Project({
   projectType: string;
 }) {
   return (
-    <div className="pb-4">
+    <div className="pb-2 sm:pb-4">
       <div className="flex flex-row justify-between items-end">
         <div className="pb-1 overflow-hidden w-fit">
           {/*  relative flex flex-row justify-between items-center pb-1 */}
-          <div className="flex items-center gap-3 -translate-x-11 duration-300 group-hover:translate-x-0">
+          <div className=" flex items-center gap-3 sm:-translate-x-11 sm:duration-300 sm:group-hover:translate-x-0">
             <Image
               src="/arrow.svg"
               width={32}
               height={32}
-              className="h-full text-sand"
+              className="h-6 w-6 sm:h-8 sm:w-8 text-sand max-sm:hidden"
               alt="Arrow"
             />
-            <p className="text-2xl sm:text-4xl whitespace-nowrap">{project}</p>
+            <p className="text-xl sm:text-4xl whitespace-nowrap">{project}</p>
           </div>
         </div>
-        <p className="text-base text-right truncate sm:text-2xl font-alexandria font-extralight">
+        <p className="text-lg text-right truncate sm:text-2xl font-alexandria font-extralight">
           {projectType}
         </p>
       </div>

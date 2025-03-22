@@ -2,7 +2,10 @@ import Skill from "./Skill";
 
 export default function Skills() {
   return (
-    <div>
+    <div className="h-screen justify-center gap-6 sm:gap-14 flex flex-col">
+      <h2 className="text-center leading-normal text-4xl sm:text-[64px]">
+        Skills & services
+      </h2>
       <div className="max-sm:hidden">
         <div className="mx-auto">
           <ul className="flex flex-col justify-center my-0 gap-4">

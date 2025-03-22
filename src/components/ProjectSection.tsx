@@ -48,13 +48,13 @@ export default function ProjectSection() {
   ];
 
   return (
-    <div className="sm:grid sm:grid-cols-8 gap-10 items-center sm:h-screen">
-      <div className="xl:col-span-5 sm:col-span-4 relative h-full  hidden sm:block ">
+    <div className="sm:grid sm:grid-cols-8 gap-10 items-center h-fit">
+      <div className="xl:col-span-5 sm:col-span-4 relative hidden sm:block ">
         {projects.map((project) => (
           <div
             key={project.name}
             className={`absolute inset-0 flex items-center justify-center
-              transition-all duration-1000 ease-in-out
+              transition-all duration-1000 ease-in-out 
               ${
                 hoveredProject === project.name
                   ? "opacity-100 blur-0 z-10"
@@ -72,9 +72,11 @@ export default function ProjectSection() {
         ))}
       </div>
       <ul className="xl:col-span-3 xl:col-start-6 sm:col-span-4 sm:col-start-5">
-        <li className="pb-4">
-          <h2 className="pb-4 text-4xl sm:text-[64px]">Projects</h2>
-          <hr className="border-foreground rounded-md" />
+        <li className="">
+          <h2 className="text-center pb-4 sm:text-start text-4xl leading-normal sm:text-[64px]">
+            Projects
+          </h2>
+          {/*    */}
         </li>
         {projects.map((project) => (
           <Link key={project.name} href={project.link} className="block">
