@@ -40,19 +40,19 @@ export default function Home() {
           <div className="sm:col-span-5 sm:col-start-4 w-full">
             <div className="flex flex-col gap-5 sm:gap-10 items-center sm:items-start">
               <p className="leading-[40px] text-xl sm:text-2xl text-center sm:text-left sm:leading-loose">
-                Hey, you! I’m{" "}
+                Hey, you! I&apos;m{" "}
                 <TransitionLink href="/moodboards">
                   <span className="font-alexandria hover:font-extrabold hover:text-pink duration-500">
                     Magnea{" "}
                   </span>
                 </TransitionLink>
                 a web designer and front-end developer with a Bachelor's degree
-                in Software Engineering. Right now, I’m honing my skills at the
-                Reykjavík Academy of Web Development, where I bridge the gap
+                in Software Engineering. Right now, I&apos;m honing my skills at
+                the Reykjavík Academy of Web Development, where I bridge the gap
                 between design and code. I thrive on crafting interfaces that
-                aren’t just visually compelling but structured with intent. I
-                believe great design is more than just aesthetics, it’s about
-                clarity, flow, and creating seamless experiences that feel
+                aren&apos;t just visually compelling but structured with intent.
+                I believe great design is more than just aesthetics, it&apos;s
+                about clarity, flow, and creating seamless experiences that feel
                 effortless for users. I'm on the lookout for exciting
                 opportunities, so if you're interested, get in touch!
                 {/* I’m currently
