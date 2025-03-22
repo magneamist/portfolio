@@ -46,7 +46,7 @@ export default function Skills() {
                 <Skill text="TypeScript"></Skill>
               </li>
               <li>
-                <Skill text="SQLLite"></Skill>
+                <Skill text="SQL"></Skill>
               </li>
               <li>
                 <Skill text="Illustrator"></Skill>
@@ -112,7 +112,7 @@ export default function Skills() {
                 <Skill text="Illustrator"></Skill>
               </li>
               <li>
-                <Skill text="SQLite"></Skill>
+                <Skill text="SQL"></Skill>
               </li>
             </div>
             <div className="flex gap-2 justify-center">

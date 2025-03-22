@@ -47,7 +47,6 @@ export default function Projects() {
           Projects
         </h1>
       </div>
-
       {/* Empty spacer div to maintain layout with fixed header */}
       <div className="h-screen"></div>
 

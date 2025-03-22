@@ -40,19 +40,21 @@ export default function Home() {
           <div className="sm:col-span-5 sm:col-start-4 w-full">
             <div className="flex flex-col gap-5 sm:gap-10 items-center sm:items-start">
               <p className="leading-[40px] text-xl sm:text-2xl text-center sm:text-left sm:leading-loose">
-                Hi Svef! I’m{" "}
+                Hey, you! I’m{" "}
                 <TransitionLink href="/moodboards">
                   <span className="font-alexandria hover:font-extrabold hover:text-pink duration-500">
                     Magnea{" "}
                   </span>
                 </TransitionLink>
-                and I’m looking for a job. If you’re interested get in touch.
-                I’m a web development student with a Bachelor’s in Software
-                Engineering, where I’m also honing my skills in web design. My
-                passion lies in creating intuitive, visually stunning user
-                interfaces that balance creativity with functionality. With a
-                strong technical foundation, I design solutions that are
-                practical, impactful, and seamless to implement.
+                a web designer and front-end developer with a Bachelor's degree
+                in Software Engineering. Right now, I’m honing my skills at the
+                Reykjavík Academy of Web Development, where I bridge the gap
+                between design and code. I thrive on crafting interfaces that
+                aren’t just visually compelling but structured with intent. I
+                believe great design is more than just aesthetics, it’s about
+                clarity, flow, and creating seamless experiences that feel
+                effortless for users. I'm on the lookout for exciting
+                opportunities, so if you're interested, get in touch!
                 {/* I’m currently
                 seeking an internship to grow as a designer and contribute to
                 innovative projects. If you’re looking for someone with a blend

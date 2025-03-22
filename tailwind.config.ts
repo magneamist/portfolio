@@ -1,4 +1,3 @@
-import { Calculator } from "lucide-react";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -76,7 +75,10 @@ export default {
   			],
   			lora: [
   				'var(--font-lora)'
-  			]
+  			],
+				barlow: [
+					'var(--font-Barlow)'
+				]
   		},
   		height: {
   			projects: 'calc(100vh - 168px)'

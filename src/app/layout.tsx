@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Alexandria, Lora, Raleway } from "next/font/google";
+import { Alexandria, Barlow, Lora, Raleway } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import FloatingCircle from "@/components/FloatingCircle";
@@ -19,6 +19,12 @@ const lora = Lora({
   subsets: ["latin"],
 });
 
+const barlow = Barlow({
+  weight: "400",
+  variable: "--font-Barlow",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Magnea Mist Portfolio",
   description: "Personal portfolio of Magnea Mist",
@@ -32,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${alexandria.variable} ${raleway.variable} ${lora.variable} relative antialiased bg-background text-foreground`}
+        className={`${alexandria.variable} ${raleway.variable} ${lora.variable} ${barlow.variable} relative antialiased bg-background text-foreground`}
       >
         <NavBar />
         <main className="px-4 sm:px-10 max-w-[2000px] mx-auto">{children}</main>
