@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ButtonArrow({ text }: { text: string }) {
   return (
     <Link
-      href="/Resume2025_Magnea.pdf"
+      href="/resume-Magnea-May2025.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="group overflow-hidden w-fit "

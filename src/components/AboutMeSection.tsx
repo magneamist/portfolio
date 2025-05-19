@@ -42,7 +42,7 @@ export default function AboutMeSection() {
                   Magnea{" "}
                 </span>
               </TransitionLink>
-              a web designer and front-end developer with a Bachelor&apos;s
+              a Web Designer and Front-End Developer with a Bachelor&apos;s
               degree in Software Engineering. Right now, I&apos;m honing my
               skills at the Reykjavík Academy of Web Development, where I bridge
               the gap between design and code. I thrive on crafting interfaces
