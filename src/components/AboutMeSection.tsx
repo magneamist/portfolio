@@ -38,10 +38,10 @@ export default function AboutMeSection() {
             <p className="leading-[40px] text-xl sm:text-2xl text-center sm:text-left sm:leading-loose">
               Hey, you! I&apos;m{" "}
               <TransitionLink href="/moodboards">
-                <span className="font-alexandria hover:font-extrabold hover:text-pink duration-500">
-                  Magnea{" "}
+                <span className="font-alexandria font-extrabold hover:font-normal text-pink duration-500 ">
+                  Magnea
                 </span>
-              </TransitionLink>
+              </TransitionLink>{" "}
               a Web Designer and Front-End Developer with a Bachelor&apos;s
               degree in Software Engineering. Right now, I&apos;m honing my
               skills at the Reykjavík Academy of Web Development, where I bridge
